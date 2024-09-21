@@ -1,5 +1,5 @@
 (function() {
-    fetch('https://raw.githubusercontent.com/seowonni/novel_dl_new/main/script.js')
+    fetch('https://raw.githubusercontent.com/seowonni/novel_dl_new/blob/main/script.js')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Failed to fetch script: ${response.statusText}`);
