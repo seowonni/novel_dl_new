@@ -100,7 +100,7 @@ async function downloadNovel(title, episodeLinks, startEpisode) {
     for (let i = startingIndex; i >= 0; i--) {
         const episodeUrl = episodeLinks[i];
 
-        if (!episodeUrl.startsWith('https://booktoki')) {
+        if (!episodeUrl.startsWith('https://newtoki.one/book')) {
             console.log(`Skipping invalid episode link: ${episodeUrl}`);
             continue;
         }
@@ -191,7 +191,7 @@ async function fetchPage(url) {
 }
 
 async function runCrawler() {
-    const novelPageRule = 'https://booktoki';
+    const novelPageRule = 'https://newtoki.one/book';
     let currentUrl = window.location.href;
 
     // Clean URL
